@@ -1,0 +1,14 @@
+/home/roko/Code/uni/2024_1/vb/LAB1/bin/Debug/net8.0/LAB1
+/home/roko/Code/uni/2024_1/vb/LAB1/bin/Debug/net8.0/LAB1.deps.json
+/home/roko/Code/uni/2024_1/vb/LAB1/bin/Debug/net8.0/LAB1.runtimeconfig.json
+/home/roko/Code/uni/2024_1/vb/LAB1/bin/Debug/net8.0/LAB1.dll
+/home/roko/Code/uni/2024_1/vb/LAB1/bin/Debug/net8.0/LAB1.pdb
+/home/roko/Code/uni/2024_1/vb/LAB1/obj/Debug/net8.0/LAB1.GeneratedMSBuildEditorConfig.editorconfig
+/home/roko/Code/uni/2024_1/vb/LAB1/obj/Debug/net8.0/LAB1.AssemblyInfoInputs.cache
+/home/roko/Code/uni/2024_1/vb/LAB1/obj/Debug/net8.0/LAB1.AssemblyInfo.vb
+/home/roko/Code/uni/2024_1/vb/LAB1/obj/Debug/net8.0/LAB1.vbproj.CoreCompileInputs.cache
+/home/roko/Code/uni/2024_1/vb/LAB1/obj/Debug/net8.0/LAB1.dll
+/home/roko/Code/uni/2024_1/vb/LAB1/obj/Debug/net8.0/refint/LAB1.dll
+/home/roko/Code/uni/2024_1/vb/LAB1/obj/Debug/net8.0/LAB1.pdb
+/home/roko/Code/uni/2024_1/vb/LAB1/obj/Debug/net8.0/LAB1.genruntimeconfig.cache
+/home/roko/Code/uni/2024_1/vb/LAB1/obj/Debug/net8.0/ref/LAB1.dll
