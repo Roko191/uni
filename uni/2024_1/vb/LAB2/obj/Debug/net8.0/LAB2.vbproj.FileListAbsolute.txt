@@ -1,0 +1,15 @@
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/bin/Debug/net8.0/LAB2
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/bin/Debug/net8.0/LAB2.deps.json
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/bin/Debug/net8.0/LAB2.runtimeconfig.json
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/bin/Debug/net8.0/LAB2.dll
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/bin/Debug/net8.0/LAB2.pdb
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/obj/Debug/net8.0/LAB2.GeneratedMSBuildEditorConfig.editorconfig
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/obj/Debug/net8.0/LAB2.AssemblyInfoInputs.cache
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/obj/Debug/net8.0/LAB2.AssemblyInfo.vb
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/obj/Debug/net8.0/LAB2.vbproj.CoreCompileInputs.cache
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/obj/Debug/net8.0/LAB2.sourcelink.json
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/obj/Debug/net8.0/LAB2.dll
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/obj/Debug/net8.0/refint/LAB2.dll
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/obj/Debug/net8.0/LAB2.pdb
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/obj/Debug/net8.0/LAB2.genruntimeconfig.cache
+/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB2/obj/Debug/net8.0/ref/LAB2.dll
