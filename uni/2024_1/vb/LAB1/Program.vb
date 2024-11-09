@@ -59,7 +59,7 @@ Module Program
 
     ' Kod za ZADATAK 4
     Sub sqrt()
-
+        Dim brojZaKorijen As Integer ' Ovo izkomentirati; Stoji tu da ne baca compalation err
         Console.WriteLine("Unesi broj koji zelis korjenovat: ")
         brojZaKorijen = Console.ReadLine()
         Console.WriteLine("")
@@ -77,8 +77,9 @@ Module Program
     Sub Main()
         ' miliToCentiAndMeter()
         ' pow()
-        ' VariableSwitch()
+         VariableSwitch()
+         Console.Write()
         ' sqrt() 'Ako zelis pokrenit ovu funkcije obavezno odkomentirati prvu linuju
 
-    End Sub
+    End Sub'
 End Module

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB1/LAB1.vbproj": {}
+    "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB3/LAB3.vbproj": {}
   },
   "projects": {
-    "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB1/LAB1.vbproj": {
+    "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB3/LAB3.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB1/LAB1.vbproj",
-        "projectName": "LAB1",
-        "projectPath": "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB1/LAB1.vbproj",
+        "projectUniqueName": "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB3/LAB3.vbproj",
+        "projectName": "LAB3",
+        "projectPath": "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB3/LAB3.vbproj",
         "packagesPath": "/home/roko/.nuget/packages/",
-        "outputPath": "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB1/obj/",
+        "outputPath": "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/roko/.nuget/NuGet/NuGet.Config"
