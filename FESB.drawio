@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" version="24.8.4">
   <diagram name="Page-1" id="lxyqCasbnnBJkQrmKzKt">
-    <mxGraphModel dx="989" dy="501" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="819" dy="415" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -28,7 +28,7 @@
           <mxGeometry x="330" y="150" width="70" height="50" as="geometry" />
         </mxCell>
         <mxCell id="FlsDOQI6MNMUNGMp7xSB-9" value="2" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="330" y="250" width="70" height="50" as="geometry" />
+          <mxGeometry x="330" y="370" width="70" height="50" as="geometry" />
         </mxCell>
         <mxCell id="FlsDOQI6MNMUNGMp7xSB-10" style="edgeStyle=elbowEdgeStyle;shape=link;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=32;entryPerimeter=0;" parent="1" source="FlsDOQI6MNMUNGMp7xSB-6" target="FlsDOQI6MNMUNGMp7xSB-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -50,8 +50,8 @@
             <mxPoint x="400" y="182" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FlsDOQI6MNMUNGMp7xSB-15" value="LAB_n" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="650" y="150" width="70" height="50" as="geometry" />
+        <mxCell id="FlsDOQI6MNMUNGMp7xSB-15" value="LABn" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="660" y="150" width="70" height="50" as="geometry" />
         </mxCell>
         <UserObject label="1. semestar" placeholders="1" name="Variable" id="FlsDOQI6MNMUNGMp7xSB-18">
           <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
@@ -60,15 +60,31 @@
         </UserObject>
         <UserObject label="2. semestar" placeholders="1" name="Variable" id="FlsDOQI6MNMUNGMp7xSB-19">
           <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
-            <mxGeometry x="325" y="300" width="80" height="20" as="geometry" />
+            <mxGeometry x="325" y="420" width="80" height="20" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="ZjXA3F8AWVSmfyhGk5bW-1" value="UVODNI" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="ZjXA3F8AWVSmfyhGk5bW-1" value="UVODNI" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="640" y="70" width="70" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="ZjXA3F8AWVSmfyhGk5bW-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=23;entryPerimeter=0;" edge="1" parent="1" source="FlsDOQI6MNMUNGMp7xSB-13" target="ZjXA3F8AWVSmfyhGk5bW-1">
+        <mxCell id="ZjXA3F8AWVSmfyhGk5bW-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=23;entryPerimeter=0;" parent="1" source="FlsDOQI6MNMUNGMp7xSB-13" target="ZjXA3F8AWVSmfyhGk5bW-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="8aXWGeNPQAfPYV7SqJaf-1" value="PROBNI" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="650" y="225" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8aXWGeNPQAfPYV7SqJaf-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=130;exitDy=32;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=32;entryPerimeter=0;" edge="1" parent="1" source="FlsDOQI6MNMUNGMp7xSB-13" target="8aXWGeNPQAfPYV7SqJaf-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Uvodni kolkovij za bodove" placeholders="1" name="Variable" id="8aXWGeNPQAfPYV7SqJaf-3">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" vertex="1" parent="1">
+            <mxGeometry x="610" y="120" width="150" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Zadatci s probnog kolokvija" placeholders="1" name="Variable" id="8aXWGeNPQAfPYV7SqJaf-4">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" vertex="1" parent="1">
+            <mxGeometry x="617.5" y="275" width="155" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
