@@ -164,6 +164,6 @@ Module Program
         ' paranOrS3()
         ' trokutType()
         ' division7or11or13()
-        calc()
+        ' calc()
     End Sub
 End Module
