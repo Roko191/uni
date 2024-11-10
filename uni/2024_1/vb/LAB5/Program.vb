@@ -106,58 +106,79 @@ Module Number
     End Sub
 End Module
 
+
+Module Zadatci
+
+    Sub runZad1()
+        ' ZADATAK 1
+        Display.jutro()
+        Display.dan()
+        Display.vecer()
+    End Sub
+
+    Sub runZad2()
+        ' Zadatak 2
+        Dim broj As Integer
+        Console.WriteLine("Upisi broj: ")
+        broj = Console.ReadLine()
+        Console.WriteLine($"Razulata okretanja znamenki broja {broj} je {Number.reverse(broj)}")
+        Console.WriteLine($"Broj znamenkih broja {broj} je {Number.digitNum(broj)}")  
+    End Sub
+
+    Sub runZad3()
+        ' ZADATAK 3
+        Dim broj As Integer
+        Console.WriteLine("Upisi broj: ")
+        broj = Console.ReadLine()
+        If Number.palindrom(broj) = True Then
+            Console.WriteLine($"Broj {broj} je palindrom")
+        Else
+            Console.WriteLine($"Broj {broj} nije palindrom")
+        End If  
+    End Sub
+
+    Sub runZad4()
+        ' ZADATAK 4
+        For i As Integer = 1 To 1000
+            If Number.prosti(i) = True Then
+                Console.WriteLine($"{i}")
+            End If
+        Next 
+    End Sub
+
+    Sub runZad5()
+        ' ZADATAK 5
+        Dim baza As Integer
+        Console.WriteLine("Upisi broj: ")
+        baza = Console.ReadLine()
+        Console.WriteLine("Zelis li unijeti potenciju: [Y if yes / Any key if not]")
+        ' Primjer da se vidi rad s opcionalnim argumentom
+        If Console.ReadLine() = "Y" Then
+            Dim ekspo As Integer
+            Console.WriteLine("Upisi potenciju: ")
+            ekspo = Console.ReadLine()
+            Number.potencija(baza, ekspo)
+            Return
+        End If
+        Number.potencija(baza)
+    End Sub
+
+    Sub runZad6()
+        ' ZADATAK 6
+        Number.randomNums()
+    End Sub
+End Module
+
 Module Program
     
     Sub Main(args As String())
-        ' ZADATAK 1
-        'Display.jutro()
-        'Display.dan()
-        'Display.vecer()
-
-        ' Zadatak 2
-        'Dim broj As Integer
-        'Console.WriteLine("Upisi broj: ")
-        'broj = Console.ReadLine()
-        'Console.WriteLine($"Razulata okretanja znamenki broja {broj} je {Number.reverse(broj)}")
-        'Console.WriteLine($"Broj znamenkih broja {broj} je {Number.digitNum(broj)}")
-
-        ' ZADATAK 3
-        'Dim broj As Integer
-        'Console.WriteLine("Upisi broj: ")
-        'broj = Console.ReadLine()
-        'If Number.palindrom(broj) = True Then
-        '    Console.WriteLine($"Broj {broj} je palindrom")
-        'Else
-        '    Console.WriteLine($"Broj {broj} nije palindrom")
-        'End If
-
-        ' ZADATAK 4
-        'For i As Integer = 1 To 1000
-        '    If Number.prosti(i) = True Then
-        '        Console.WriteLine($"{i}")
-        '    End If
-        'Next
-
-
-        ' ZADATAK 5
-        'Dim baza As Integer
-        'Console.WriteLine("Upisi broj: ")
-        'baza = Console.ReadLine()
-        'Console.WriteLine("Zelis li unijeti potenciju: [Y if yes / Any key if not]")
-        '' Primjer da se vidi rad s opcionalnim argumentom
-        'If Console.ReadLine() = "Y" Then
-        '    Dim ekspo As Integer
-        '    Console.WriteLine("Upisi potenciju: ")
-        '    ekspo = Console.ReadLine()
-        '    Number.potencija(baza, ekspo)
-        '    Return
-        'End If
-        'Number.potencija(baza)
-
-        ' ZADATAK 6
-        'Number.randomNums()
-
-        ' ZADATAK 7
+    
+        ' Zadatci.runZad1()
+        ' Zadatci.runZad2()
+        ' Zadatci.runZad3()
+        ' Zadatci.runZad4()
+        ' Zadatci.runZad5()
+        ' Zadatci.runZad6()
 
     End Sub
 End Module
