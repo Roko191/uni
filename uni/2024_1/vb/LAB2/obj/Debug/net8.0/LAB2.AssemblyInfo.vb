@@ -15,7 +15,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("LAB2"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+393b624a41c095ee153bbf2b16762c3d8b44e863"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4f51ec6c299e60db786cee66e7a4cea781174f9"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("LAB2"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("LAB2"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")> 

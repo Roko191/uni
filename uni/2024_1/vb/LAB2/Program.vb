@@ -138,7 +138,7 @@ Module Program
     Sub calc()
         ' KOD ZA ZADATAK 7
         Dim broj1, broj2 As Integer
-        Dim matOperator As String
+        Dim matOperator As Char
         Console.WriteLine("broj1: ")
         broj1 = Console.ReadLine()
         Console.WriteLine("broj2: ")
@@ -164,6 +164,6 @@ Module Program
         ' paranOrS3()
         ' trokutType()
         ' division7or11or13()
-        ' calc()
+        calc()
     End Sub
 End Module
