@@ -171,8 +171,8 @@ End Module
 
 Module Program
     
-    Sub Main(args As String())
-    
+    Sub Main()
+
         ' Zadatci.runZad1()
         ' Zadatci.runZad2()
         ' Zadatci.runZad3()
