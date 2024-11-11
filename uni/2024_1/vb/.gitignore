@@ -1,2 +1,3 @@
 # Ignoriraj bin folder sa bin kreiranim pri buildanju i pokretanju 
-LAB*/bin
+LAB/LAB*/bin
+UVODNI/UVOD_*/bin
