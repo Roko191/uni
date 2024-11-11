@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB5/LAB5.vbproj",
-      "projectName": "LAB5",
-      "projectPath": "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB5/LAB5.vbproj",
+      "projectUniqueName": "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB/LAB4/LAB4.vbproj",
+      "projectName": "LAB4",
+      "projectPath": "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB/LAB4/LAB4.vbproj",
       "packagesPath": "/home/roko/.nuget/packages/",
-      "outputPath": "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB5/obj/",
+      "outputPath": "/home/roko/Code/uni_wrap/uni/2024_1/vb/LAB/LAB4/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/roko/.nuget/NuGet/NuGet.Config"

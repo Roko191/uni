@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LAB5</RootNamespace>
+    <RootNamespace>LAB4</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
