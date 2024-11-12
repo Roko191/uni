@@ -63,10 +63,9 @@ Module Program
 
         Dim finalMatrix As Integer(,) = New Integer(matrix1.GetUpperBound(0), matrix1.GetUpperBound(1)) {}
 
-        For rank As Integer = 1 To matrix1.GetUpperBound(0)
-            For cnt As Integer = 1 To matrix1.GetUpperBound(1)
+        For rank As Integer = 0 To matrix1.GetUpperBound(0)
+            For cnt As Integer = 0 To matrix1.GetUpperBound(1)
                 finalMatrix(rank, cnt) = matrix1(rank, cnt) + matrix2(rank, cnt)
-                Console.WriteLine($"{matrix1(rank, cnt)} + {matrix2(rank,cnt)} = {finalMatrix(rank,cnt)}")
             Next
         Next
 
@@ -136,10 +135,10 @@ Module Program
         ' Test za zadatak 5
 
         Dim matrix1 As Integer(,) = New Integer(1, 1) {}
-        matrix1(0, 0) = 1
-        matrix1(0, 1) = 1
-        matrix1(1, 0) = 1
-        matrix1(1, 1) = 1
+        matrix1(0, 0) = 2
+        matrix1(0, 1) = 4
+        matrix1(1, 0) = 5
+        matrix1(1, 1) = 6
         Ispis(matrix1)
         Console.WriteLine()
 
