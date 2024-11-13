@@ -1,5 +1,88 @@
 Imports System
 
+
+Module Zadaci
+    Sub runZad1()
+        ' ZADATAK 1
+        Dim n As Integer
+        Console.WriteLine("n:")
+        n = Console.ReadLine() - 1
+        Dim niz As Integer() = New Integer(n) {}
+        For cnt As Integer = 0 To niz.GetUpperBound(0)
+            Console.WriteLine($"Clan {cnt}: ")
+            niz(cnt) = Console.ReadLine()
+        Next
+        For cnt As Integer = 0 To niz.GetUpperBound(0)
+            If (niz(cnt) Mod 3) = 0 Then
+                Console.WriteLine($"Indeks: {cnt}, broj: {niz(cnt)}")
+            End If
+        Next
+    End Sub
+
+    Sub runZad2()
+        ' Test Zadatak 2
+        Dim niz1 As Integer() = New Integer(3) {0, 1, 2, 3}
+        Program.Ispis(niz1)
+        Console.WriteLine("")
+        Dim niz2 As Integer(,) = New Integer(1, 1) {}
+        niz2(0, 0) = 1
+        niz2(0, 1) = 1
+        niz2(1, 0) = 1
+        niz2(1, 1) = 1
+        Program.Ispis(niz2)
+    End Sub
+
+    Sub runZad3()
+        ' Test za zadatak 3
+        Dim n As Integer
+        Console.WriteLine("n:")
+        n = Console.ReadLine() - 1
+        Dim niz As Integer() = New Integer(n) {}
+        For cnt As Integer = 0 To niz.GetUpperBound(0)
+            Console.WriteLine($"Clan {cnt}: ")
+            niz(cnt) = Console.ReadLine()
+        Next
+        Program.Ispis(niz)
+        Console.WriteLine()
+        Console.WriteLine($"Zbroj: {zbroj(niz)}")
+        Console.WriteLine($"Prosjek: {prosjek(niz)}")
+    End Sub
+
+    Sub runZad4()
+        ' Test za zadatak 4
+        Dim n As Integer
+        Console.WriteLine("n:")
+        n = Console.ReadLine()
+        Dim niz As Integer() = New Integer(n) {}
+        niz = Program.random(n)
+        Program.Ispis(niz)
+        Console.WriteLine()
+        Program.Ispis(Program.modRandom(niz))
+    End Sub
+
+    Sub runZad5()
+        ' Test za zadatak 5
+
+        Dim matrix1 As Integer(,) = New Integer(1, 1) {}
+        matrix1(0, 0) = 2
+        matrix1(0, 1) = 4
+        matrix1(1, 0) = 5
+        matrix1(1, 1) = 6
+        Program.Ispis(matrix1)
+        Console.WriteLine()
+
+        Dim matrix2 As Integer(,) = New Integer(1, 1) {}
+        matrix2(0, 0) = 1
+        matrix2(0, 1) = 1
+        matrix2(1, 0) = 1
+        matrix2(1, 1) = 1
+        Program.Ispis(matrix2)
+        Console.WriteLine()
+
+        Program.Ispis(Program.matrixCalc(matrix1, matrix2))
+    End Sub
+End Module
+
 Module Program
     Sub Ispis(ByVal niz As Integer())
 
@@ -73,83 +156,10 @@ Module Program
     End Function
 
     Sub Main()
-        ' ZADATAK 1
-        'Dim n As Integer
-        'Console.WriteLine("n:")
-        'n = Console.ReadLine() - 1
-
-        'Dim niz As Integer() = New Integer(n) {}
-
-        'For cnt As Integer = 0 To niz.GetUpperBound(0)
-        '    Console.WriteLine($"Clan {cnt}: ")
-        '    niz(cnt) = Console.ReadLine()
-        'Next
-
-        'For cnt As Integer = 0 To niz.GetUpperBound(0)
-        '    If (niz(cnt) Mod 3) = 0 Then
-        '        Console.WriteLine($"Indeks: {cnt}, broj: {niz(cnt)}")
-        '    End If
-        'Next
-
-        ' Test Zadatak 2
-        'Dim niz1 As Integer() = New Integer(3) {0, 1, 2, 3}
-        'Ispis(niz1)
-        'Console.WriteLine("")
-
-        'Dim niz2 As Integer(,) = New Integer(1, 1) {}
-        'niz2(0, 0) = 1
-        'niz2(0, 1) = 1
-        'niz2(1, 0) = 1
-        'niz2(1, 1) = 1
-        'Ispis(niz2)
-
-        ' Test za zadatak 3
-        'Dim n As Integer
-        'Console.WriteLine("n:")
-        'n = Console.ReadLine() - 1
-
-        'Dim niz As Integer() = New Integer(n) {}
-
-        'For cnt As Integer = 0 To niz.GetUpperBound(0)
-        '    Console.WriteLine($"Clan {cnt}: ")
-        '    niz(cnt) = Console.ReadLine()
-        'Next
-
-        'Ispis(niz)
-        'Console.WriteLine()
-        'Console.WriteLine($"Zbroj: {zbroj(niz)}")
-        'Console.WriteLine($"Prosjek: {prosjek(niz)}")
-
-        ' Test za zadatak 4
-        'Dim n As Integer
-        'Console.WriteLine("n:")
-        'n = Console.ReadLine()
-
-        'Dim niz As Integer() = New Integer(n) {}
-        'niz = random(n)
-
-        'Ispis(niz)
-        'Console.WriteLine()
-        'Ispis(modRandom(niz))
-
-        ' Test za zadatak 5
-
-        Dim matrix1 As Integer(,) = New Integer(1, 1) {}
-        matrix1(0, 0) = 2
-        matrix1(0, 1) = 4
-        matrix1(1, 0) = 5
-        matrix1(1, 1) = 6
-        Ispis(matrix1)
-        Console.WriteLine()
-
-        Dim matrix2 As Integer(,) = New Integer(1, 1) {}
-        matrix2(0, 0) = 1
-        matrix2(0, 1) = 1
-        matrix2(1, 0) = 1
-        matrix2(1, 1) = 1
-        Ispis(matrix2)
-        Console.WriteLine()
-
-        Ispis(matrixCalc(matrix1, matrix2))
+        Zadaci.runZad1()
+        Zadaci.runZad2()
+        Zadaci.runZad3()
+        Zadaci.runZad4()
+        Zadaci.runZad5()
     End Sub
 End Module
