@@ -64,18 +64,22 @@ Module Zadaci
         ' Test za zadatak 5
 
         Dim matrix1 As Integer(,) = New Integer(1, 1) {}
-        matrix1(0, 0) = 2
-        matrix1(0, 1) = 4
-        matrix1(1, 0) = 5
-        matrix1(1, 1) = 6
+        Console.WriteLine("Upisi 4 broj za prvu matricu: [Enter za novi broj]")
+        matrix1(0, 0) = Console.ReadLine()
+        matrix1(0, 1) = Console.ReadLine()
+        matrix1(1, 0) = Console.ReadLine()
+        matrix1(1, 1) = Console.ReadLine()
+        Console.WriteLine()
         Program.Ispis(matrix1)
         Console.WriteLine()
 
         Dim matrix2 As Integer(,) = New Integer(1, 1) {}
-        matrix2(0, 0) = 1
-        matrix2(0, 1) = 1
-        matrix2(1, 0) = 1
-        matrix2(1, 1) = 1
+        Console.WriteLine("Upisi 4 broj za drugu matricu matricu: [Enter za novi broj]")
+        matrix2(0, 0) = Console.ReadLine()
+        matrix2(0, 1) = Console.ReadLine()
+        matrix2(1, 0) = Console.ReadLine()
+        matrix2(1, 1) = Console.ReadLine()
+        Console.WriteLine()
         Program.Ispis(matrix2)
         Console.WriteLine()
 
@@ -156,10 +160,10 @@ Module Program
     End Function
 
     Sub Main()
-        Zadaci.runZad1()
-        Zadaci.runZad2()
-        Zadaci.runZad3()
-        Zadaci.runZad4()
-        Zadaci.runZad5()
+        ' Zadaci.runZad1()
+        ' Zadaci.runZad2()
+        ' Zadaci.runZad3()
+        ' Zadaci.runZad4()
+        ' Zadaci.runZad5()
     End Sub
 End Module
