@@ -69,17 +69,21 @@ Module Program
     End Sub
 
     Sub radijus()
+        Dim radijus As Single
+        Console.WriteLine("Upisi radijus:")
+        radijus = Console.ReadLine()
+        Console.WriteLine($"Oplosje: { 4 * Math.PI * Math.pow(radijus, 2) }, Volumen: { (4 * Math.PI * Math.pow(radijus, 3) ) / 3 }")
     End Sub
 
     Sub kibiMebiGibi()
+        Console.WriteLine("kibi: {0}, Mebi: {1}, Gibi: {2}", Math.Pow(2, 10), Math.Pow(2, 20), Math.Pow(2, 30))
     End Sub
 
     Sub Main()
         ' miliToCentiAndMeter()
         ' pow()
-         VariableSwitch()
-         Console.Write()
         ' sqrt() 'Ako zelis pokrenit ovu funkcije obavezno odkomentirati prvu linuju
-
+        ' radijus()
+        ' kibiMebiGibi()
     End Sub'
 End Module
