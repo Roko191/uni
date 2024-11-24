@@ -150,7 +150,74 @@ Module Program
 
     Sub Zadatak8()
         'KOD ZA ZADATAK 8
-    End Sub    
+        Dim n As Integer
+
+        Console.WriteLine("Unesi n: ")
+        n = Console.ReadLine()
+
+        Dim sum As Integer
+        Dim evenCnt As Integer
+
+
+        For cnt As Integer = 1 To n Step 1:
+            Dim num As Integer
+            Console.WriteLine($"Unesi {cnt} broj: ")
+            num = Console.ReadLine()
+
+            ' Provjeri jeli broj paran ako je provjera jel mu zadnja znamenka 4
+            If (num Mod 2) = 0 AndAlso (num Mod 10) <> 4 Then
+                sum += num
+                evenCnt += 1
+            End If
+        Next
+
+        Console.WriteLine($"Arihmeticka sredina unesenih parnih brojevima kojima zadnja znamenka nije 4 je: {sum / evenCnt}")
+
+    End Sub 
+
+    Sub Zadatak9()
+        Dim rangeStart As Integer
+        Dim rangeEnd As Integer
+
+        ' Korsnik definira raspon
+        Console.WriteLine("Unesi pocetak raspona: ")
+        rangeStart = Console.ReadLine()
+
+        Console.WriteLine("Unesi kraj raspona: ")
+        rangeEnd = Console.ReadLine()
+
+        ' Brojac za provjeru
+        Dim numCount As Integer
+
+        For cnt As Integer = rangeStart To rangeEnd Step 1
+            If (cnt Mod 10) = 9 Then
+                numCount += 1
+            End If
+        Next
+
+        Console.WriteLine($"Znamenku jedinice 9 ima {numCount} broj/broja/brojeva")
+    End Sub
+
+    Sub Zadatak10()
+        ' U zadatku se navodi tako da necu voditi
+        ' nikakvu provjeru jeli broj troznamenkast
+        For i As Integer = 1 To 10 Step 1
+            Dim num As Integer
+            Console.WriteLine($"Unesi {i} broj: ")
+            num = Console.ReadLine()
+
+            Dim digitSum As Integer
+
+            While num > 0
+                digitSum += num Mod 10    
+                num = num \ 10
+            End While
+
+            Console.WriteLine($"Arihmeticka sredina znamenki upisanog broja je {digitSum / 3}")
+
+        Next
+    End Sub
+
     Sub Main()
         ' Zadatak1()
         ' Zadatak2()
@@ -158,7 +225,10 @@ Module Program
         ' Zadatak4()
         ' Zadatak5()
         ' Zadatak7()
-
+        ' Zadatak8()
+        ' Zadatak9()
+        ' Zadatak10()
+        asdhkjs = 0
         ' CLEAN EXIT
         Console.WriteLine()
         Return
