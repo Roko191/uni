@@ -28,9 +28,21 @@ def selectionSort(niz):
             if(niz[j] < niz[min]):
                 min = j
 
-        # Zamjeni brojeve u listi ako nisu jednaki
+        # Stavi broj min na najnize moguce mjesto (svako koje nije vec sortirano)
         if(min != i):
             niz[i], niz[min] = niz[min], niz[i]
+
+# Implementacija za insertion sort
+# O: N^2
+def insertionSort(niz):
+    # Listaj kroz niz od 1
+    for i in range(1, len(niz) - 1):
+        j = i
+
+        # Dok nedodemo do kraja i dok je elemnt nalijevo veci zamjenjuj brojeve
+        while ( j > 0 and niz[j - 1] > niz[j]):
+            niz[j] = niz[j - 1]
+            j = j - i
 
 
 # Function to test 
@@ -55,5 +67,15 @@ def main():
     endTime = time.time()
     print("niz = ", niz)
     print(f"selectionSort-u je trebalo : {endTime - startTime}s")
+
+    niz = [54, 78, 34, 2, 3, 5, 23]
+
+    # Insertion sort
+    print("niz = ", niz)
+    startTime = time.time() 
+    selectionSort(niz)
+    endTime = time.time()
+    print("niz = ", niz)
+    print(f"inesrtionSort-u je trebalo : {endTime - startTime}s")
 
 main()
