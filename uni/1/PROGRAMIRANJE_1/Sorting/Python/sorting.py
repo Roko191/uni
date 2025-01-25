@@ -1,7 +1,7 @@
 # Sorting algohoritams implematation for python
 
-# Provjeravat cemo koliko je svaki alogoritam brz
 import time 
+import random
 
 # Implementacija za bubble sort
 # O: N^2
@@ -28,7 +28,7 @@ def selectionSort(niz):
             if(niz[j] < niz[min]):
                 min = j
 
-        # Stavi broj min na najnize moguce mjesto (svako koje nije vec sortirano)
+        # Stavi broj na indeksu min na najnize moguce mjesto (svako koje nije vec sortirano)
         if(min != i):
             niz[i], niz[min] = niz[min], niz[i]
 
@@ -44,10 +44,20 @@ def insertionSort(niz):
             niz[j] = niz[j - 1]
             j = j - i
 
+# !!! BONUS !!!
+# Funkcija koja generira array s zadanmi brojem clanova
+# Nasumicni brojevi su u rangu od 1 do 1000
+def arrayGen(nNumber: int, niz):
+    for i in range(0, nNumber):
+        niz.append(random.randint(1, 1000))
+
 
 # Function to test 
 def main():
-    niz = [54, 78, 34, 2, 3, 5, 23]
+    nNumber = 10
+
+    niz = []
+    arrayGen(nNumber, niz)
 
     # Bubble sort
     print("niz = ", niz)
@@ -58,7 +68,8 @@ def main():
     print(f"bubbleSort-u je trebalo : {endTime - startTime}s")
 
     # Resetaj niz (unesi se pointer do arraya pa ga izmjeni)
-    niz = [54, 78, 34, 2, 3, 5, 23]
+    niz = []
+    arrayGen(nNumber, niz)
 
     # Selection sort
     print("niz = ", niz)
@@ -68,7 +79,8 @@ def main():
     print("niz = ", niz)
     print(f"selectionSort-u je trebalo : {endTime - startTime}s")
 
-    niz = [54, 78, 34, 2, 3, 5, 23]
+    niz = []
+    arrayGen(nNumber, niz)
 
     # Insertion sort
     print("niz = ", niz)
