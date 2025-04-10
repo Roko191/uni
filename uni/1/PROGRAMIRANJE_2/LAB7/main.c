@@ -1,14 +1,16 @@
 // #define _CRT_SECURE_NO_WARNINGS Uncomment on Windows
 
+#define STR_NAME_SIZE 20
+
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
 
 /*
 	Argumenti:
-		void *matra -> pointer koi upucuje na adresu provog elementa matrice
-		sizeRow -> koliko redova ima matrica
-		sizeColumn -> koliko stupaca ima matrica
+		int *matra -> pointer koi upucuje na adresu provog elementa matrice
+		row -> koliko redova ima matrica
+		col -> koliko stupaca ima matrica
 */
 void ispisMatre(int *matra, int row, int col) {
 
@@ -53,7 +55,7 @@ int main() {
 			transMatra[j][i] = zd2matra[i][j];
 		}
 	}
-	
+
 	ispisMatre((int*)zd2matra, 3, 3);
 	printf("\n");
 	ispisMatre((int*)transMatra, 3, 3);
@@ -107,7 +109,7 @@ int main() {
 	ispisMatre((int*)matraD, 3, 3);
 
 	// ZADATAK 4.
-	char imena[5][10];
+	char imena[5][STR_NAME_SIZE];
 
 	// User input
 	for (int i = 0; i < 5; i++) {
@@ -145,10 +147,8 @@ int main() {
 	printf("%d. %s\n", highIndex, imena[highIndex]);
 
 	// Poredaj ih abecedno (bubble sort samo usoporedivanj slova???)
-	printf("\nSlova abecedno poredana su: \n");
-
 	for (int i = 0; i < 4; i++) {
-		char tempString[10];
+		char tempString[STR_NAME_SIZE];
 		for (int j = 0; j < 4 - i; j++) {
 			if (tolower(imena[j][0]) > tolower(imena[j + 1][0])) {
 				// String swap lol
@@ -159,7 +159,7 @@ int main() {
 		}
 	}
 
-	printf("Imena koja si unio su: \n");
+	printf("Imena poredana abecedno su: \n");
 	for (int i = 0; i < 5; i++) {
 		printf("%d. %s\n", i, imena[i]);
 	}
