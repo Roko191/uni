@@ -3,7 +3,7 @@ Funckije koje bi trebalo implemenitrat:
 	-> KREIRANJE, UNOS, ISPIS MATRICE
 	createMatrix(); ==> dinammicno alociranje
 	printMatrix();
-	inputMatrix();
+	fillMatrix();
 
 	-> KREIRANJE, UNOS, ISPIS NIZA
 	createArray();

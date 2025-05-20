@@ -13,6 +13,17 @@
 
 
 // Matrix functions
+
+/*
+*   Name: createMatrix
+*   Arguments: int row -> num of rows; int col -> num of cols
+*   Retrun: pointer to start of matrix (int *)
+*   Desc:
+*         Creates int matrix on heap pased on num of
+*         rows and cols passed into func. 
+*  
+*/
+
 int** createMatrix(int row, int col){
 
     int** matrix = NULL;
@@ -37,9 +48,18 @@ int** createMatrix(int row, int col){
 
 // String functons
 
+
+/*
+*   Name: createHeapString
+*   Arguments: None
+*   Retrun: pointer to start of string (char *)
+*   Desc:
+*        Ask for user input and creates string on heap 
+*        Its exectly the sizeof string + 1 ('\0')
+*
+*/
+
 char* createHeapString(){
-
-
 
     int size = 1;
     int index = 0;
