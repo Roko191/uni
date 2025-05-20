@@ -5,6 +5,12 @@ typedef struct Node {
     int data;
     struct Node *next;
 } Node;
+        
+void createNode(Node **nodeP, int numToStore){
+     (*nodeP) = (Node*)malloc(sizeof(Node));
+     (*nodeP) -> data = numToStore;
+     (*nodeP) -> next = NULL;
+}
 
 /*
     This function goes trought list 
@@ -21,28 +27,27 @@ typedef struct Node {
 
     Or I can just return the pointer itself to list???
 */
-void addNodeLast(Node* startNode, int numToStore){
-    Node* newNode = (Node*)malloc(sizeof(Node));
-    newNode -> data = numToStore;
-    newNode -> next = NULL;
-
-    while(startNode != NULL){
-        startNode =  startNode -> next;
+void addAndCreateNodeLast(Node** startNode, int numToStore){
+    while((*startNode)->next != NULL){
+        (*startNode) =  (*startNode) -> next;
     }
+    
+    Node* toAdd;
+    createNode(&toAdd, numToStore);
 
-    startNode = newNode;
-
+    (*startNode) = toAdd;
 };
 
 void addNodeFirst(){};
 
 void printLinkList(Node* startNode)
 {
-    while(startNode != NULL)
+    while(startNode->next != NULL)
     {
         printf("%d ", startNode -> data);
         startNode = startNode->next;
     }
+    printf("%d ", startNode -> data);
 }
 
 int main(){
@@ -75,10 +80,8 @@ int main(){
     // head = first;
 
     // Lets add new itme to list
-    Node *fourth = (Node*)malloc(sizeof(Node));
-    fourth->data = 4;
-    third->next = fourth;
-    fourth->next = NULL;
+    // Node *fourth;
+    // addAndCreateNodeLast(&head, 78);
     
     // Lets add to the start
     Node *newBegining = (Node*)malloc(sizeof(Node));
@@ -86,7 +89,7 @@ int main(){
     head = newBegining;
     newBegining -> next = first;
 
-    addNodeLast(head, 63);
+    // addNodeLast(head, 63);
 
     printLinkList(head);
     printf("\n");
