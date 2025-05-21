@@ -9,6 +9,15 @@
 #define ENTER '\n'
 #endif
 
+// Usefull stuff
+
+// Cleats stdin
+void flushInputBuff(){
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);    
+}
+
+
 // Array functons
 
 
@@ -60,6 +69,10 @@ int** createMatrix(int row, int col){
 */
 
 char* createHeapString(){
+    // očisti stdin ako je nešto ostalo u njemu
+    // Prebacit u zasebnu funkciju 
+
+
 
     int size = 1;
     int index = 0;
