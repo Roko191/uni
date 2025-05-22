@@ -30,6 +30,14 @@ int main(){
                 zadatak4();
                 printf("===ZAD 4 - END===\n");
                 break;
+            case 5:
+                zadatak5();
+                printf("===ZAD 5 - END===\n");
+                break;
+            case 6:
+                zadatak6();
+                printf("===ZAD 6 - END===\n");
+                break;
             case 0:
                 loop = 0;
                 break;

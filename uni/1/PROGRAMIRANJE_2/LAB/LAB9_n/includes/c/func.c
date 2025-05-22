@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #include "../zad.h"
+#include "../func.h"
 
 /* Funkicje za 1. zadatak */ 
 
@@ -86,4 +87,30 @@ unsigned long long factoriel(unsigned int num){
 
     return num * factoriel(num - 1);
     
+}
+
+/* Funkcije za zadatak 5 */
+unsigned long long fibonaci(unsigned int num){
+    if(num == 0)
+        return 0;
+    else if(num == 1)
+        return 1;
+    else
+        return fibonaci(num - 1) + fibonaci(num - 2);
+}
+
+int findMin(int *niz, int n, int i){
+    if(i == n - 1) return niz[i];
+
+    int min = findMin(niz, n, i + 1);
+    return (niz[i] < min) ? niz[i] : min;
+
+}
+
+int findMax(int *niz, int n, int i){
+    if(i == n - 1) return niz[i];
+
+    int max = findMax(niz, n, i + 1);
+    return (niz[i] > max) ? niz[i] : max;
+
 }

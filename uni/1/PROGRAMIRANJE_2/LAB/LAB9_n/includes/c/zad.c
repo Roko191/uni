@@ -107,3 +107,30 @@ void zadatak4(){
 
     printf("\n");
 }
+
+void zadatak5(){
+    printf("\nZADATAK 5.\n");
+    printf("Upisi broj: ");
+
+    int broj;
+    scanf("%u", &broj);
+
+    printf("Fibonacci niz: \n");
+    for(unsigned int i = 0; i < broj; i++){
+        printf("%llu ", fibonaci(i));
+    }
+ 
+    printf("\n");
+    
+    return;
+}
+
+void zadatak6(){
+    printf("\nZADATAK 6.\n");
+    int brojevi[] = {10, 11, 25, 467, 0, 12, 13, 16};
+
+    printf("Najmani je %d\n", findMin(brojevi, 8, 0));
+    printf("Najveci je %d\n", findMax(brojevi, 8, 0));
+
+    return;
+}

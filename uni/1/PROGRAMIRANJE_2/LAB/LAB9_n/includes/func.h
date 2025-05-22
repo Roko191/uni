@@ -26,3 +26,9 @@ void myStrcpy(char *src, char *dst);
 /* FUNKCIJE ZA ZAD 4. */
 unsigned long long factoriel(unsigned int num);
 
+/* FUNKICJE ZA ZAD 5. */
+unsigned long long fibonaci(unsigned int num);
+
+/* FUNKCIJE ZA ZAD 6. */
+int findMin(int *niz, int arrSize, int start);
+int findMax(int *niz, int arrSize, int start);
