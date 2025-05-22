@@ -1,12 +1,7 @@
 #include <stdio.h>
 
 // Includovi za zadatke
-#include "includes/zad/zad1/zad1.h"
-#include "includes/zad/zad2/zad2.h"
-#include "includes/zad/zad3/zad3.h"
-#include "includes/zad/zad4/zad4.h"
-#include "includes/zad/zad5/zad5.h"
-#include "includes/zad/zad6/zad6.h"
+#include "./includes/zad.h"
 
 
 int main(){
@@ -35,6 +30,14 @@ int main(){
                 zadatak4();
                 printf("===ZAD 4 - END===\n");
                 break;
+            case 5:
+                zadatak5();
+                printf("===ZAD 5 - END===\n");
+                break;
+            case 6:
+                zadatak6();
+                printf("===ZAD 6 - END===\n");
+                break;
             case 0:
                 loop = 0;
                 break;
@@ -45,5 +48,3 @@ int main(){
 
     return 0;
 }
-
-

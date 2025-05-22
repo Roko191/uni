@@ -1,25 +1,36 @@
-CC=clang
-MAIN_DEPENDS = main.c zd1 zd2 zd3 zd4
-O_FILES = zad1.o zad2.o zad3.o zad4.o
-
-all: main
-
-main: $(MAIN_DEPENDS)
-	$(CC) -L../lib -Wl,-rpath=../lib -lLabUtils -o program main.c $(O_FILES)
+#																
+#	Makefile for LAB9			
+# 								
+#	Author: Roko, 18.05.2025	 
+#								
+#								
 
 
-# Pravila za zadatke
-zd1: ./includes/zad/zad1/zad1.c
-	$(CC) -o zad1.o -c ./includes/zad/zad1/zad1.c
+CC = clang
+LIB_PATH = ../lib
+LIBS = -lLabUtils
 
-zd2: ./includes/zad/zad2/zad2.c
-	$(CC) -o ./zad2.o -c ./includes/zad/zad2/zad2.c
 
-zd3: ./includes/zad/zad3/zad3.c
-	$(CC) -o ./zad3.o -c ./includes/zad/zad3/zad3.c
+FUNC_PATH = ./includes/c/func.c 
+ZAD_PATH = ./includes/c/zad.c
 
-zd4: ./includes/zad/zad4/zad4.c
-	$(CC) -o ./zad4.o -c ./includes/zad/zad4/zad4.c
+
+OBJ = ./.tmp/*.o
+
+all: main clean
+
+.PHONY = main
+main: func zad 
+	$(CC) -L$(LIB_PATH) -Wl,-rpath=$(LIB_PATH) $(LIBS) main.c $(OBJ)  -o program
+
+tmp:
+	mkdir .tmp
+
+func: $(FUNC_PATH) tmp	
+	$(CC) -c -o ./.tmp/func.o $(FUNC_PATH) 
+
+zad: $(ZAD_PATH) tmp
+	$(CC) -c -o ./.tmp/zad.o $(ZAD_PATH)
 
 clean:
-	rm -f *.o
+	rm -rf .tmp

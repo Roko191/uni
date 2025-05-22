@@ -11,7 +11,7 @@
 
 // Usefull stuff
 
-// Cleats stdin
+// Clears stdin
 void flushInputBuff(){
     int c;
     while ((c = getchar()) != '\n' && c != EOF);    
@@ -35,9 +35,7 @@ void flushInputBuff(){
 
 int** createMatrix(int row, int col){
 
-    int** matrix = NULL;
-
-    matrix = malloc(row * sizeof(int));
+    int** matrix = malloc(row * sizeof(int));
 
     if(!matrix){
         return NULL;
@@ -68,18 +66,17 @@ int** createMatrix(int row, int col){
 *
 */
 
-char* createHeapString(){
-    // očisti stdin ako je nešto ostalo u njemu
-    // Prebacit u zasebnu funkciju 
-
-
-
+char* createHeapString(){ 
     int size = 1;
     int index = 0;
 
     char ch = 0;
 
     char *sPoint = malloc(size);
+
+    if(!sPoint){
+        return NULL;
+    }
 
     while(1){
         ch = getc(stdin);
