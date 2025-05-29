@@ -24,6 +24,10 @@ int main(){
                 zadatak3();
                 printf("===ZAD 3 - END===\n");
                 break;
+            case 4:
+                zadatak4();
+                printf("===ZAD 4 - END===\n");
+                break;
             case 0:
                 loop = 0;
                 break;

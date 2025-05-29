@@ -37,9 +37,46 @@ void zadatak2(){
     printf("Rez zbrajanja: %d\n", rez -> sum);
     printf("Rez oduzimanja: %d\n", rez -> diff);
 
+
+    free(brojevi);
+    free(rez);
+
     return;
 }
 
 void zadatak3(){
+    printf("\n=== ZADATAK 3. ===\n");
+
+    flushInputBuff();
+    Date* datum = getDate();
+
+    if(!datum){
+        return;
+    }
+
+    printDateBeforeAndAfter(datum);
+
+
+    free(datum);
+    return;
+}
+
+void zadatak4(){
+    printf("\n=== ZADATAK 4. ===\n");
+
+    flushInputBuff();
+
+    char *str;
+    char *sub;
+
+    getString(&str);
+    getSubString(&sub);
+
+    int num = countSubstrOccurrences(str, sub);
+
+    printf("Pronadeno %d sub stringova \n", num);
+
+    free(str);
+    free(sub);
     return;
 }
