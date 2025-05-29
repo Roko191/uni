@@ -25,6 +25,9 @@ int zd1_search(int *niz, int broj){
     if(limiter == NIZ_SIZE - 1){
         return 0;
     }
+    else if(broj == niz[limiter]){
+        return 1;
+    }
 
     limiter++;
 
@@ -57,18 +60,11 @@ int zd2_mnozenje(int *matrica, int index,int total){
 /*Funkcije za 3. zadatak */
 
 int myStrlen(char *string){
-    static int count = 0;
-
-
-    if(*(string + count) == '\0'){
-        return count; 
+    if(*(string) == '\0'){
+        return 0; 
     }
 
-    count++;
-
-    myStrlen(string);
-
-    return count;
+    return 1 + myStrlen(string + 1);
 }
 
 void myStrcpy(char *src, char *dst){
