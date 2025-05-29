@@ -1,5 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <ctype.h>
+
+#include "err.h"
 
 #ifdef _WIN32
 #define ENTER 0x0d
@@ -10,6 +13,23 @@
 #endif
 
 // Usefull stuff
+char *strlwr(char *str)
+{
+  unsigned char *p = (unsigned char *)str;
+
+  while (*p) {
+     *p = tolower((unsigned char)*p);
+      p++;
+  }
+
+  return str;
+}
+
+
+void errPrint(int err){
+    printf("Error has happend\n");
+    return;
+}
 
 // Clears stdin
 void flushInputBuff(){
@@ -19,7 +39,64 @@ void flushInputBuff(){
 
 
 // Array functons
+int* createIntArray(int elCnt){
+    int* res = malloc(elCnt * sizeof(int));
 
+    if(!res){
+        return NULL;
+    }
+
+    return res;
+}
+
+int fillArray(int *arr, int elCnt){
+    if(!arr || elCnt <= 0){
+        return ERR_FUNC_ARG_BAD;
+    }
+
+
+    for(int i = 0; i < elCnt; i++){
+        int num;
+        printf("Unesi broj: ");
+        scanf(" %d", &num);
+
+        *(arr + i) = num;
+    }
+
+
+    return 0;
+}
+
+
+int* createAndFillArray(int elCnt){
+    if(elCnt < 0){
+        return NULL;
+    }
+    
+    int* res = createIntArray(elCnt);
+
+    if(!res){
+        return NULL;
+    }
+
+    fillArray(res, elCnt);
+
+    return res;
+}
+
+int printArray(int *arr, int elCnt){
+    if((!arr) || elCnt < 0){
+        return ERR_FUNC_ARG_BAD;
+    }
+
+    for(int i = 0; i < elCnt; i++){
+        printf("%d ", *(arr + i));
+    }
+
+    printf("\n");
+
+    return OK;
+}
 
 // Matrix functions
 
@@ -35,7 +112,7 @@ void flushInputBuff(){
 
 int** createMatrix(int row, int col){
 
-    int** matrix = malloc(row * sizeof(int));
+    int** matrix = malloc(row * sizeof(int*));
 
     if(!matrix){
         return NULL;
