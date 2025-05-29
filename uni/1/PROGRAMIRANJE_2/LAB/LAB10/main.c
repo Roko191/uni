@@ -3,14 +3,14 @@
 #include "includes/zad.h"
 
 int main(){
-    printf("===LAB 10===\n");
+    printf("===LAB 11===\n");
 
     int zad;
     int loop = 1;
 
     while(loop){
         printf("Koji zadatak zelis porkenit: ");
-        scanf("%d", &zad);
+        scanf(" %d", &zad);
         switch(zad){
             case 1:
                 zadatak1();
@@ -23,6 +23,10 @@ int main(){
             case 3:
                 zadatak3();
                 printf("===ZAD 3 - END===\n");
+                break;
+            case 4:
+                zadatak4();
+                printf("===ZAD 4 - END===\n");
                 break;
             case 0:
                 loop = 0;

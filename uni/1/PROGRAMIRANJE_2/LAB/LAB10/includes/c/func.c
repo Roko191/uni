@@ -6,15 +6,42 @@
 
 
 Date* getDate(){
-    printf("\tUnesi datum [DD.MM.YYYY]: ");
-    
+    int months[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+
     Date* datum = malloc(sizeof(Date));
 
-    // flushInputBuff();
-    char* strDatum = createHeapString();
+    while(1){
+        printf("\tUnesi datum [DD.MM.YYYY]: ");
 
-    sscanf(strDatum, "%d.%d.%d", &datum->day, &datum->month, &datum->year);
-    free(strDatum);
+        char* strDatum = createHeapString();
+
+        sscanf(strDatum, "%d.%d.%d", &datum->day, &datum->month, &datum->year);
+
+        if(checkLeapYear(datum->year)){
+            months[1] = 29;
+        }
+
+
+        if(datum -> day > months[datum ->  month - 1]
+        || datum -> day < 1){
+            printf("\tPogresan unos!\n");
+            free(strDatum);
+            continue;
+        } else if(datum -> month < 1 || datum -> month > 12){
+            printf("\tPogresan unos!\n");
+            free(strDatum);
+            continue;
+        } else if (datum -> year < 1){
+            printf("\tPogresan unos!\n");
+            free(strDatum);
+            continue;
+        }
+
+        free(strDatum);
+        break;
+    }
+    // flushInputBuff();
 
     return datum;
 }
@@ -22,13 +49,27 @@ Date* getDate(){
 Time* getTime(){
     Time* vrime = malloc(sizeof(Time)); 
 
-    printf("\tUnesi uru rodenja [HH:MM:SS]: ");
     //   flushInputBuff();
-    char* strUnos1 = createHeapString();
 
-    int parsed = sscanf(strUnos1, "%d:%d:%d", &vrime->hour, &vrime->minute, &vrime->seconds);
-    //printf("parsed = %d | Rezultat: %d:%d:%d\n", parsed, vrime->hour, vrime->minute, vrime->seconds);
-    free(strUnos1);
+    while(1){
+        printf("\tUnesi sat [HH:MM:SS]: ");
+
+        char* strUnos1 = createHeapString();
+
+        sscanf(strUnos1, "%d:%d:%d", &vrime->hour, &vrime->minute, &vrime->seconds);
+        
+        if((vrime -> hour < 0) || (vrime->minute < 0  || vrime->minute > 60) 
+        || (vrime ->seconds < 0 || vrime->seconds > 60)){
+                printf("\tPogresan unos!\n");
+                free(strUnos1);
+                continue;
+        }
+        
+        //printf("parsed = %d | Rezultat: %d:%d:%d\n", parsed, vrime->hour, vrime->minute, vrime->seconds);
+        free(strUnos1);
+        break;
+    }
+
 
     return vrime;
 }
@@ -80,7 +121,7 @@ Date* calculateDateAfter(Date* datum){
 
     
     if(checkLeapYear(resDate->year)){
-        months[1] = 27;
+        months[1] = 29;
     }
 
     if(resDate -> day < 1){
@@ -115,7 +156,7 @@ Date* calculateDateBefore(Date* datum){
 
     int months[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     if(checkLeapYear(resDate->year)){
-        months[1] = 27;
+        months[1] = 29;
     }
 
     if(resDate -> day ==  1 && resDate -> month == 1){

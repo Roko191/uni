@@ -39,7 +39,7 @@ Date* calculateDateAfter(Date* datum);
 void printDateBeforeAndAfter(Date* datum);
 
 // Zadatak 3
-int getPeopleData(Person* osoba, int arrSize);
+int getPeopleData(Person* osoba, int arrSize); 
 Person* findAndPrintOldestPerson(Person* osoba, int arrSize);
 Person* findAndPrintAlphaFirstPerson(Person* osoba, int arrSize);
 void printPerson(Person* osoba);
